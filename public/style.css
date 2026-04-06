@@ -1,0 +1,103 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+  background-color: #dbfa5d;  /* 米棕色 */
+  margin: 0;  /* 避免瀏覽器預設空白 */
+}
+header {
+  background: linear-gradient(to bottom, #11e1f4 0%, #6ef3ffef 100%);
+    padding:  0px 0px 0px 0px ;
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    border-bottom: 4px #000000;
+    top: 1px;
+}
+header a {
+    text-decoration: none;    /*首頁 目錄 消除底線*/ 
+
+}        
+header a:hover {
+    text-decoration: underline;    /*首頁 目錄 任一屬標移上去有底線*/ 
+
+}
+header li{
+    display: inline;
+    margin-right: 5vw;            /*首頁 目錄 左移*/ 
+    
+}         
+header ul{
+    position:absolute;
+    right: 10vw;                     /*首頁 目錄 左邊定位*/ 
+    top: 0;
+    line-height: 80px;
+}         
+h1{
+    
+    position:absolute;
+    left:2vw ;                      /*定位標題*/ 
+    top: 2px;
+
+}
+.標題  {
+  font-size: 20px;  
+  position:absolute;
+    left:2vw ;                      /*定位副標*/ 
+    top: 70px;
+    }
+.文字  {
+  
+  position:absolute;
+    left:1vw ;                      /*定位內容*/ 
+    top: 150px;
+    font-size: x-large;
+    
+}
+.文字 a{
+    text-decoration: none;          /*目錄消除底線*/ 
+}
+.文字 a:hover {
+    text-decoration: underline;    /* 目錄 任一屬標移上去有底線*/ 
+
+}
+
+.box {
+            height: 250px;
+            border: 4px solid #ff87ed;       /*邊框*/
+            background-color: #ffffff; 
+            
+            
+            display: flex;
+            align-items: flex-start;   
+            justify-content: flex-start; 
+            
+            padding: 10px;            
+            box-sizing: border-box;    
+            
+            font-size: 20px;     /*字體大小*/ 
+            color: #e96fe7;               
+        }
+
+ .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 3000px;
+            margin: 90px auto;
+        }
+
+@media (max-width: 768px) {
+  img {
+    width: 60%; /* 手機時縮小 */
+  }
+}
+
+
+img {
+  max-width: 20px;
+  height: auto;
+}
+
